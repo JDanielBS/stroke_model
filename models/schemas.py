@@ -63,7 +63,7 @@ class PatientRequest(BaseModel):
     work_type:         WorkTypeEnum = Field(..., description="Tipo de empleo")
     Residence_type:    ResidenceEnum = Field(..., description="Tipo de residencia")
     avg_glucose_level: float       = Field(..., ge=0,          description="Nivel promedio de glucosa en sangre")
-    bmi:               float       = Field(..., ge=0, le=100,  description="Índice de masa corporal")
+    bmi:               float       = Field(..., ge=0, le=190,  description="Índice de masa corporal")
     smoking_status:    SmokingEnum = Field(..., description="Estado de tabaquismo")
 
     @field_validator("hypertension", "heart_disease")

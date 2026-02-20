@@ -1,0 +1,45 @@
+{
+  "best_model_name": "SVM",
+  "metrics": {
+    "KNN": {
+      "accuracy": 0.7661,
+      "precision": 0.0837,
+      "recall": 0.38,
+      "f1_score": 0.1372,
+      "auc_roc": 0.6414,
+      "classification_report": "              precision    recall  f1-score   support\n\n  Sin Stroke       0.96      0.79      0.86       972\n  Con Stroke       0.08      0.38      0.14        50\n\n    accuracy                           0.77      1022\n   macro avg       0.52      0.58      0.50      1022\nweighted avg       0.92      0.77      0.83      1022\n"
+    },
+    "Árbol Decisión": {
+      "accuracy": 0.775,
+      "precision": 0.1087,
+      "recall": 0.5,
+      "f1_score": 0.1786,
+      "auc_roc": 0.6645,
+      "classification_report": "              precision    recall  f1-score   support\n\n  Sin Stroke       0.97      0.79      0.87       972\n  Con Stroke       0.11      0.50      0.18        50\n\n    accuracy                           0.77      1022\n   macro avg       0.54      0.64      0.52      1022\nweighted avg       0.93      0.77      0.84      1022\n"
+    },
+    "Random Forest": {
+      "accuracy": 0.82,
+      "precision": 0.1278,
+      "recall": 0.46,
+      "f1_score": 0.2,
+      "auc_roc": 0.762,
+      "classification_report": "              precision    recall  f1-score   support\n\n  Sin Stroke       0.97      0.84      0.90       972\n  Con Stroke       0.13      0.46      0.20        50\n\n    accuracy                           0.82      1022\n   macro avg       0.55      0.65      0.55      1022\nweighted avg       0.93      0.82      0.86      1022\n"
+    },
+    "AdaBoost": {
+      "accuracy": 0.8258,
+      "precision": 0.1322,
+      "recall": 0.46,
+      "f1_score": 0.2054,
+      "auc_roc": 0.7238,
+      "classification_report": "              precision    recall  f1-score   support\n\n  Sin Stroke       0.97      0.84      0.90       972\n  Con Stroke       0.13      0.46      0.21        50\n\n    accuracy                           0.83      1022\n   macro avg       0.55      0.65      0.55      1022\nweighted avg       0.93      0.83      0.87      1022\n"
+    },
+    "SVM": {
+      "accuracy": 0.7466,
+      "precision": 0.1144,
+      "recall": 0.62,
+      "f1_score": 0.1931,
+      "auc_roc": 0.7704,
+      "classification_report": "              precision    recall  f1-score   support\n\n  Sin Stroke       0.97      0.75      0.85       972\n  Con Stroke       0.11      0.62      0.19        50\n\n    accuracy                           0.75      1022\n   macro avg       0.54      0.69      0.52      1022\nweighted avg       0.93      0.75      0.82      1022\n"
+    }
+  }
+}

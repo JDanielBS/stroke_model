@@ -20,6 +20,7 @@ Ejecución
 from contextlib import asynccontextmanager
 
 from fastapi import FastAPI, Depends, HTTPException, status
+from fastapi.middleware.cors import CORSMiddleware
 from fastapi.responses import JSONResponse
 
 from stroke_api.config import (
@@ -87,6 +88,15 @@ app = FastAPI(
     description = API_DESCRIPTION,
     version     = API_VERSION,
     lifespan    = lifespan,
+)
+
+# Permite peticiones desde el frontend (archivo local o cualquier origen)
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins     = ["*"],   # en producción reemplaza por el dominio exacto
+    allow_credentials = True,
+    allow_methods     = ["*"],
+    allow_headers     = ["*"],
 )
 
 
